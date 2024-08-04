@@ -1054,7 +1054,7 @@ export const totalCountVariants: {
         />
       </IconWrapper>
     ),
-    title: "Number of companies",
+    title: "Number of Employees",
     data: [
       {
         index: "1",

@@ -52,7 +52,7 @@ export const totalCountVariants: {
         />
       </IconWrapper>
     ),
-    title: "Number of companies",
+    title: "Number of Employees",
     data: [
       {
         index: "1",
@@ -215,19 +215,19 @@ export const companySizeOptions: {
   value: CompanySize;
 }[] = [
   {
-    label: "Enterprise",
+    label: "Intern",
     value: "ENTERPRISE",
   },
   {
-    label: "Large",
+    label: "Junior",
     value: "LARGE",
   },
   {
-    label: "Medium",
+    label: "Senior",
     value: "MEDIUM",
   },
   {
-    label: "Small",
+    label: "Super-Senior",
     value: "SMALL",
   },
 ];
@@ -237,34 +237,24 @@ export const industryOptions: {
   value: Industry;
 }[] = [
   { label: "Aerospace", value: "AEROSPACE" },
-  { label: "Agriculture", value: "AGRICULTURE" },
   { label: "Automotive", value: "AUTOMOTIVE" },
-  { label: "Chemicals", value: "CHEMICALS" },
   { label: "Construction", value: "CONSTRUCTION" },
   { label: "Defense", value: "DEFENSE" },
   { label: "Education", value: "EDUCATION" },
   { label: "Energy", value: "ENERGY" },
   { label: "Financial Services", value: "FINANCIAL_SERVICES" },
-  { label: "Food and Beverage", value: "FOOD_AND_BEVERAGE" },
   { label: "Government", value: "GOVERNMENT" },
   { label: "Healthcare", value: "HEALTHCARE" },
   { label: "Hospitality", value: "HOSPITALITY" },
   { label: "Industrial Manufacturing", value: "INDUSTRIAL_MANUFACTURING" },
   { label: "Insurance", value: "INSURANCE" },
-  { label: "Life Sciences", value: "LIFE_SCIENCES" },
   { label: "Logistics", value: "LOGISTICS" },
   { label: "Media", value: "MEDIA" },
-  { label: "Mining", value: "MINING" },
-  { label: "Nonprofit", value: "NONPROFIT" },
-  { label: "Other", value: "OTHER" },
-  { label: "Pharmaceuticals", value: "PHARMACEUTICALS" },
   { label: "Professional Services", value: "PROFESSIONAL_SERVICES" },
-  { label: "Real Estate", value: "REAL_ESTATE" },
-  { label: "Retail", value: "RETAIL" },
   { label: "Technology", value: "TECHNOLOGY" },
   { label: "Telecommunications", value: "TELECOMMUNICATIONS" },
   { label: "Transportation", value: "TRANSPORTATION" },
-  { label: "Utilities", value: "UTILITIES" },
+  { label: "Other", value: "OTHER" },
 ];
 
 export const businessTypeOptions: {
@@ -272,15 +262,15 @@ export const businessTypeOptions: {
   value: BusinessType;
 }[] = [
   {
-    label: "B2B",
+    label: "Grade A",
     value: "B2B",
   },
   {
-    label: "B2C",
+    label: "Grade B",
     value: "B2C",
   },
   {
-    label: "B2G",
+    label: "Grade C",
     value: "B2G",
   },
 ];

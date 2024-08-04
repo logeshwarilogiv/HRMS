@@ -43,12 +43,12 @@ const EditPage = () => {
             <Form {...formProps} layout='vertical'>
               <CustomAvatar shape="square" src={avatarUrl} name={getNameInitials(name || '')} style={{width: 96, height: 96, marginBottom: '24px'}} />
           <Form.Item
-            label="Sales owner"
+            label="Employee"
             name="salesOwnerId"
             initialValue={formProps?.initialValues?.salesOwner?.id}
           >
             <Select 
-              placeholder="Please select a sales owner"
+              placeholder="Please select a employee "
               {...selectProps}
               options={
                 queryResultUsers.data?.data.map((user) => ({
@@ -69,22 +69,23 @@ const EditPage = () => {
           <Form.Item>
             <InputNumber 
               autoFocus
-              addonBefore='$'
+              addonBefore='Rs'
               min={0}
               placeholder="0,00"
             />
           </Form.Item>
-          <Form.Item label="Industry">
+          <Form.Item label="Divison">
             <Select options={industryOptions} />
           </Form.Item>
-          <Form.Item label="Business type">
-            <Select options={businessTypeOptions} />
+          <Form.Item label="Category">
+          <Select options={businessTypeOptions} />
+      
           </Form.Item>
-          <Form.Item label="Country" name="country">
-            <Input placeholder='Country' />
+          <Form.Item label="Designation" name="country">
+            <Input placeholder='your Designation' />
           </Form.Item>
-          <Form.Item label="Website" name="website">
-            <Input placeholder="Website" />
+          <Form.Item label="Residency period" name="website">
+            <Input placeholder="Residency period" />
           </Form.Item>
             </Form>
           </Edit>

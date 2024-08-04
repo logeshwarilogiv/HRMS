@@ -52,7 +52,7 @@ const TasksCreatePage = () => {
         // navigate to the list page of the tasks resource
         list("tasks", "replace");
       }}
-      title="Add new card"
+      title="Add new task card"
       width={512}
     >
       <Form

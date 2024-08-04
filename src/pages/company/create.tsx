@@ -10,6 +10,7 @@ import { GetFieldsFromList } from '@refinedev/nestjs-query'
 import { UsersSelectQuery } from '@/graphql/types'
 
 const Create = () => {
+  
   const go = useGo();
 
   const goToListPage = () => {
@@ -51,19 +52,19 @@ const Create = () => {
       >
         <Form {...formProps} layout="vertical">
           <Form.Item
-            label="Company name"
+            label="Employee name"
             name="name"
             rules={[{required: true}]}
           >
-            <Input placeholder="Please enter a company name" />
+            <Input placeholder="Please enter a Employee name" />
           </Form.Item>
           <Form.Item
-            label="Sales owner"
+            label="Enter Division"
             name="salesOwnerId"
             rules={[{required: true}]}
           >
             <Select 
-              placeholder="Please select a sales owner"
+              placeholder="Please select a division"
               {...selectProps}
               options={
                 queryResult.data?.data.map((user) => ({
